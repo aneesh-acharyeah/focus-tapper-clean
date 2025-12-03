@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Focus Tapper</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Focus Tapper</h1>
+      <p class="hint">Tap the zone when it's small for higher score.</p>
+    </header>
+
+    <section class="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>High: <span id="highscore">0</span></div>
+    </section>
+
+    <main class="play-area">
+      <div id="circle" class="circle">
+        <div id="zone" class="zone"></div>
+      </div>
+    </main>
+
+    <section class="controls">
+      <button id="startBtn">Start</button>
+      <button id="modeBtn">Mode: Normal</button>
+    </section>
+
+    <div id="message" class="message" aria-live="polite"></div>
+
+    <div id="end" class="end hidden">
+      <h2>Game Over</h2>
+      <p>Your score: <span id="final-score">0</span></p>
+      <button id="restart">Play Again</button>
+    </div>
+
+    <footer class="footer">Focus Tapper — gameplay only</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
